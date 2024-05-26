@@ -12,7 +12,6 @@ def log_parameters(func):
         return func(*args, **kwargs)
     return wrapper
 
-# Przykład użycia
 @log_parameters
 def example_function(a: int, b: str, c: float):
     print(a, b, c)
