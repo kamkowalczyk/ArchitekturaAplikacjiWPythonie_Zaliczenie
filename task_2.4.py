@@ -29,7 +29,7 @@ def main():
     start_range = 2
     end_range = 1000000  
     num_processes = 8
-    chunk_size = (end_range - start_range) // num_processes
+    chunk_size = (end_range - start_range) 
 
     manager = multiprocessing.Manager()
     result = manager.list()
