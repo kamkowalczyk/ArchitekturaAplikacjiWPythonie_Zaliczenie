@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 class OrderBase(BaseModel):
     status: str
@@ -6,9 +6,8 @@ class OrderBase(BaseModel):
 class OrderCreate(OrderBase):
     user_id: int
 
-class Order(OrderBase):
+class OrderRead(OrderBase):
     id: int
     user_id: int
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)

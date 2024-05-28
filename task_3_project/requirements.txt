@@ -1,6 +1,7 @@
-fastapi
-uvicorn
-sqlalchemy
-pydantic
-pytest
-requests
+fastapi==0.78.0
+sqlalchemy==2.0.30
+pydantic==1.10.2
+uvicorn==0.18.2
+pytest==7.2.1
+httpx==0.23.3
+dicttoxml==1.7.4
